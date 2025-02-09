@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume Builder</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
 </head>
 <body>
-    <h1 style="text-align: center; font-family:Verdana, Geneva, Tahoma, sans-serif;" >Resume Builder</h1>
+    <h1 style="text-align: center; font-family:Verdana, Geneva, Tahoma, sans-serif;">Resume Builder</h1>
     <hr>
     <br>
 
@@ -21,11 +22,35 @@
         <label for="phone">Phone:</label>
         <input type="tel" id="phone" name="phone" required><br><br>
 
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" required><br><br>
+
+        <label for="linkedin">LinkedIn:</label>
+        <input type="url" id="linkedin" name="linkedin"><br><br>
+
+        <label for="website">Personal Website:</label>
+        <input type="url" id="website" name="website"><br><br>
+
         <label for="Education">Education</label>
         <input type="text" id="Education" name="Education" required><br><br>
 
         <label for="Experience">Experience</label>
         <textarea id="Experience" name="Experience" required></textarea><br><br>
+
+        <label for="Skills">Skills</label>
+        <input type="text" id="Skills" name="Skills" placeholder="e.g., HTML, JavaScript, Project Management"><br><br>
+
+        <label for="Certifications">Certifications</label>
+        <input type="text" id="Certifications" name="Certifications" placeholder="e.g., PMP, AWS Certified"><br><br>
+
+        <label for="Languages">Languages</label>
+        <input type="text" id="Languages" name="Languages" placeholder="e.g., English, Spanish"><br><br>
+
+        <label for="Projects">Projects</label>
+        <textarea id="Projects" name="Projects" placeholder="Briefly describe your projects"></textarea><br><br>
+
+        <label for="Awards">Awards</label>
+        <input type="text" id="Awards" name="Awards" placeholder="e.g., Employee of the Month"><br><br>
 
         <button type="button" onclick="generateResume()">Generate Resume!</button>
     </form>
