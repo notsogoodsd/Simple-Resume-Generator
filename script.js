@@ -1,37 +1,45 @@
-function generateResume() {
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const phone = document.getElementById('phone').value;
-    const education = document.getElementById('Education').value;
-    const experience = document.getElementById('Experience').value;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
 
-    const resumeHTML = `
-        <!DOCTYPE html>
-        <html lang="en">
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>${name}'s Resume</title>
-            <style>
-                body { font-family: Arial, sans-serif; }
-                h1, h2 { color: #333; }
-                p { line-height: 1.6; }
-            </style>
-        </head>
-        <body>
-            <h1>${name}</h1>
-            <p>Email: ${email}</p>
-            <p>Phone: ${phone}</p>
-            <h2>Education</h2>
-            <p>${education}</p>
-            <h2>Experience</h2>
-            <p>${experience}</p>
-        </body>
-        </html>
-    `;
+form {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
 
-    // Open in a new tab
-    const newTab = window.open();
-    newTab.document.write(resumeHTML);
-    newTab.document.close();
+label {
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+}
+
+input, textarea {
+    width: 50%;
+    padding: 5px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    margin-top: 30px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    font-size: larger;
+}
+
+button:hover {
+    background-color: #0056b3;
 }
